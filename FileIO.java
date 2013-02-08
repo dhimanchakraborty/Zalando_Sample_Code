@@ -13,6 +13,11 @@ import java.util.Arrays;
  */
 public class FileIO 
 { 
+     /*
+     * This function can be used to read a file line by line
+     * @Param filename(String)
+     * @return void
+     */
      static void fileReaderLineByLine(String fileName)
      {
          sysProp logger = new sysProp();
@@ -30,7 +35,14 @@ public class FileIO
          }
          logger.getLog("Exiting fileReaderLineByLines");
       }
-     public void fileAppend(String writeLine,String processName)
+    
+    
+    /*
+     * This function can be used to append to a .txt file line by line
+     * @Param writeLine(String) processName(String)
+     * @return void
+     */
+    public void fileAppend(String writeLine,String processName)
      {
          sysProp logger = new sysProp();
          logger.getLog("Entered : " + logger.getFunctionName());
@@ -54,6 +66,12 @@ public class FileIO
              logger.getLog("Error : " + err.getMessage());
          }
      }
+     
+     /*
+     * This function can be used to read all files name from a given directory absolute path
+     * @Param dirAbsPath(String)
+     * @return void
+     */
      public void getAllFileNamefromDir(String dirAbsPath)
      {
          sysProp logger = new sysProp();
