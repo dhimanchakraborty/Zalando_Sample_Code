@@ -13,7 +13,13 @@ import java.util.regex.Pattern;
  */
 public class sysUtil 
 {
-    public void stringTokenize(String inputStr)
+     /*
+     * This function can be used to tokenize a given string using a perticuler delimiter 
+     * and can be recreated using the tokens as required .
+     * @Param inputStr(String)
+     * @return void
+     */
+   public void stringTokenize(String inputStr)
     {
         String regex = "\\/";
         String[] strData;
