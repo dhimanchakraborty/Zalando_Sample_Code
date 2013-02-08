@@ -13,18 +13,25 @@ import java.util.Arrays;
  */
 public class sysProp 
 {
-    //This function can be used for printing the log lines
     /**
-     *
+     * This function can be used for printing the log lines
      * @param logLine
      */
     public void getLog(String logLine)
     {
         System.out.println(logLine);
     }
+     /**
+     * This function can be used for printing the log lines if the input is File type
+     * @param fileLog
+     */
+    public void getLog(File fileLog) 
+    {
+        System.out.println(fileLog);
+    }
     /**
-     *
-     * @return
+     * This function can be used to get the fuction_Name for correct type of logging
+     * @return function_Name
      */
     public String getFunctionName()
     {
